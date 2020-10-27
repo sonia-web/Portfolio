@@ -343,6 +343,7 @@ footer ul{
         height: 6rem;
         list-style: none;
         background-color: #edeff0!important;
+        box-shadow: 2rem -2rem 2rem 2rem;
     }
     .navigation{
         display: none;
