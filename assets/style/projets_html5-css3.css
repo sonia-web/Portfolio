@@ -1,0 +1,162 @@
+.container span,
+.container h1{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    font-family: "vogue", serif;
+    margin-top: 2rem;
+}
+.texte1{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    position: relative;
+    animation: text 3.5s 1;
+}
+.texte2{
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes text{
+    0%{
+        color: #c2c6b7;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 20px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+.image_accueil{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/IMG_3433.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parcours{
+    display: flex;
+    justify-content: space-around;
+    background-color:#edeff0;
+    margin-top: 5rem;
+}
+.parcours_mobile{
+    display: none;
+}
+#carouselExampleControls{
+    width: 55%;
+}
+#carouselExampleControls2{
+    width: 55%;
+}
+#carouselExampleControls3{
+    width: 55%;
+}
+#carouselExampleControls_bis{
+    width: 55%;
+}
+#carouselExampleControls2_bis{
+    width: 55%;
+}
+#carouselExampleControls3_bis{
+    width: 55%;
+}
+#carouselExampleControls4_bis{
+    width: 55%;
+}
+.illustration img{
+    margin-top:0;
+}
+.illustration{
+    width: 30%;
+}
+shadow img{
+    width: 400px;
+    box-shadow: 5px 0px 15px grey;
+}
+.carousel-inner{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.carousel-inner:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*MEDIAQUERIE*/
+
+@media all and (max-device-width: 480px){
+    main{
+        background-color: #edeff0;
+    }
+    .parcours{
+        display: none;
+    }
+    .parcours_mobile{
+        display: inline;
+    }
+    .illustration img{
+        width: 80%;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    
+    }
+    .image_accueil{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/IMG_8886.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #carouselExampleControls{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls3{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls_bis{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls2_bis{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls3_bis{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #carouselExampleControls4_bis{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .carousel-inner:hover{
+        display: none;
+    };
+    .parcours{
+        display: none;
+    }
+    .illustration{
+        width: 100%;
+    }
+}

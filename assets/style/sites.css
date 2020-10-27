@@ -1,0 +1,112 @@
+.container span,
+.container h1{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    font-family: "vogue", serif;
+    margin-top: 2rem;
+}
+.texte1{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    position: relative;
+    animation: text 3.5s 1;
+}
+.texte2{
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes text{
+    0%{
+        color: #c2c6b7;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 20px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+.image_accueil{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/IMG_8665.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parcours{
+    display: flex;
+    justify-content: space-around;
+    background-color:#edeff0;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.illustration img{
+    margin-top:0;
+}
+.site img{
+    width: 90%;
+    box-shadow: 5px 0px 15px grey;
+}
+.disney_projet{
+    display: flex;
+    text-align: center;
+}
+.disney_projet img{
+    width: 50%;
+    box-shadow: 5px 0px 15px grey;
+}
+
+/*MEDIAQUERIE*/
+
+@media all and (max-device-width: 480px){
+    main{
+        background-color: #edeff0;
+    }
+    .container h1{
+        color: white;
+    }
+    .container span{
+        color: white;
+    }
+    .parcours{
+        display: inline;
+    }
+    .illustration img{
+        width: 60%;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    
+    }
+    .image_accueil{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/IMG_3030.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .site img{
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+ 
+    }
+    .disney_projet{
+        display: flex;
+        text-align: center;
+    }
+    .disney_projet img{
+        width: 90%;
+        box-shadow: 5px 0px 15px grey;
+        margin-top: 4rem;
+    }
+}
+

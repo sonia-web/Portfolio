@@ -1,0 +1,506 @@
+@font-face{
+    font-family: jost;
+    src: url(../fonts/jost/Jost-VariableFont_wght.ttf)
+}
+@font-face{
+    font-family: vogue;
+    src: url(../fonts/vogue/Vogue.ttf)
+}
+
+
+/* LE RESET */
+
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+    
+}
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: "jost", serif;
+    z-index: 1;
+    background-color:#edeff0;
+}
+
+
+
+/* LE HEADER */
+
+.navigation{
+     display: flex;
+     justify-content: space-between;
+     position: fixed;
+     background-color: rgba(194, 198, 183, 0.5);
+     width: 100%;
+     height: 10%;
+     z-index: 2;
+}
+.navigation img{
+    width: 40%;
+    margin-left: 2rem;
+}
+.navigation a{
+    margin-right: 0;
+}
+nav{
+    padding: 1rem;
+}
+
+.texte_navigation{
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+}
+.texte_navigation ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.texte_navigation li{
+    padding: 1rem;
+}
+.texte_navigation a{
+    color: white;
+    font-size: 17px;
+    margin-right: 17px;
+}
+.texte_navigation a:hover{
+    color: black;
+    text-decoration: none;
+}
+#navbar{
+    display: none;
+}
+
+/*MAIN*/
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-48%, -73%);
+    width: 100%;
+}
+.container span,
+.container h1{
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    font-family: "vogue", serif;
+    margin-top: 2rem;
+}
+.texte1{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    position: relative;
+    animation: text 3.5s 1;
+}
+.texte2{
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 20px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+.titre p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+header p,
+main p{
+    
+    text-align: justify;
+}
+h2{
+    text-align: center;
+    margin: 4rem;
+    color: #353f51;
+}
+h3{
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.MarginTop{
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.image_accueil{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/image_accueil2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.presentation{
+    position: relative;
+    text-align: start;
+    background-color: #fff;
+}
+.presentation h2,
+.presentation h3{
+    color: #827842;
+    text-align: justify;
+}
+.presentation img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+}
+.presentation img:hover{
+    opacity: 0.2;
+}
+.presentation_texte{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.presentation_texte ul,ol{
+    text-align: start;
+}
+.presentation_texte h3{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+
+}
+.presentation_texte h4{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #827842
+    
+}
+#carouselExampleControls{
+    width: 45%;
+}
+.parcours{
+    display: flex;
+    justify-content: space-around;
+    background-color: #edeff0;
+    padding: 2rem;
+}
+.illustration img{
+    margin-top: 10rem;
+    width: 100%;
+}
+.texte{
+   
+    width: 40%;
+    padding: 2rem;
+    box-shadow: 10px 5px 5px #abbcc8;
+}
+
+
+
+/* ICI LE FOOTER */
+
+footer{
+    text-align: start;
+    background-color: #edeff0;
+    position: relative;
+}
+footer h2{
+    margin-bottom: 3rem;
+}
+footer p{
+    padding: 0.5rem;
+}
+#popup2{
+	width: 90%;
+	max-height: 80%;
+	overflow-y:auto; 
+	padding: 2rem;
+    background-color: #abbcc8;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 3px 2px grey;
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	color: black;
+    display: none;
+    margin-bottom: 2rem;
+}
+div .popupClose{
+   text-align: right;
+    padding: 1.5px;
+    padding-bottom:10px;
+}
+.popupClose a{
+    color: white;
+}
+.titre-popup2{
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+#popup2 p, #popup2 h6{
+    color: #000;
+    margin-bottom: 3rem;
+}
+#popup2 h4{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+.btnMentionsOpen{
+    color: #fff;
+}
+.btnMentionsOpen:hover{
+    color: red;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+.mentions_legales a{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    
+}
+.mentions_legales{
+    text-align: center;
+    margin: 5rem;
+    color: black;
+   
+}
+.mentions_legales p{
+    text-align: center;
+    margin: 5rem;
+    color: black;
+}
+#arrow_up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 30px;
+    opacity: 0.3;  
+}
+#arrow_up img{
+    width: 50px;   
+}
+#arrow_up:hover{
+    opacity: 1;    
+}
+
+
+
+
+@media all and (max-device-width: 480px){
+
+    /*RESET*/
+    *{
+        font-size: 1.5rem;
+    }
+    body{
+        width: 100%;
+        background-color:#edeff0;
+    }
+    
+    
+
+    /*LE HEADER*/
+
+    header{
+        width: 100%;
+    }
+    #navbar{
+        display: block;
+        width: 100%;
+        height: 6rem;
+        list-style: none;
+        background-color: #edeff0!important;
+    }
+    .navigation{
+        display: none;
+    }
+    .logo{
+        width: 4rem;
+        margin-left: 21rem;
+    }
+    .nav-link{
+        margin-top: 1rem;
+        color: white;
+    }
+    .dropdown-item{
+        color: black;
+        background-color: #edeff0;
+        font-size: 2.1rem;
+    }
+    .dropdown-menu.show{
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 30rem;
+    }
+    .dropdown-toggle::after{
+        border-left: 0;
+        border-right: 0;
+    }
+    nav{
+        width: 20%;
+    }
+    nav img{
+        width: 133%;
+        margin-top: -2rem;
+    }
+    .menu{
+        width: 10%!important;
+        margin-bottom: -2rem;
+    }
+    .texte_navigation{
+        width: 15%;
+    }
+    .texte_navigation ul{
+        display: block;
+        margin-top: 315px;
+    }
+
+    /*MAIN*/
+
+    @keyframes text{
+        0%{
+            color: black;
+            margin-bottom: -20px;
+        }
+        30%{
+            letter-spacing: 20px;
+            margin-bottom: -20px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -20px;
+        }
+    }
+    header p,
+    main p{
+    text-align: start!important;
+    }
+    main{
+        background-color: #edeff0;
+    }
+    .container{
+        top:50%
+    }
+    .titre p{
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+    }
+    h2{
+        font-size: 1.6rem;
+        color: #353f51;
+    }
+    .image_accueil{
+        height: 82vh;     /*82vh*/
+    }
+    .container h1{
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+    }
+    .container span{
+        font-size: 22px;
+        color: white;
+    }
+    .presentation{
+        height: 180vh; /*110vh*/
+        overflow: hidden; /*cacher*/
+    }
+    .presentation img{
+        height: 180vh; /*110*/
+        opacity: 0.2;
+    }
+    .presentation_texte{
+        margin-top: 3rem;
+        height: 100vh; /*85*/
+        top: 51%;
+        width: 100%;
+        padding: 1rem;
+    }
+    .presentation h2, .presentation h3{
+        padding: 1rem;
+        margin-top: -20rem;
+    }
+    .presentation_texte p{
+        margin-left: 1rem;
+    }
+    .presentation_texte h3{
+        font-size: 1.5rem;
+        text-align: start;
+        margin: 0rem;
+    }
+    .presentation_texte ul, ol{
+        padding-left: 3rem;
+    }
+    .parcours{
+        display: inline;
+    }
+    .illustration img{
+        width: 60%;
+        margin-left: 6rem;
+        margin-top: 2rem;
+    }
+    .texte{
+        width: 96%;
+        padding: 2rem;
+    }
+    .parcours{
+        padding: 0;
+    }
+
+
+     /*FOOTER*/
+
+    .mentions_legales{
+        margin: 2rem;
+    }
+    .contact{
+        text-align: start;
+        background-color:#edeff0;
+    /*    margin-top: -2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;*/
+    }
+    .localisation{
+        margin-bottom: 5rem;
+    }
+    .adresse h2{
+        text-align: center;
+    }
+    footer hr{
+        display: none;
+    }
+
+}
