@@ -1,3 +1,6 @@
+header{
+    display: flex;
+}
 .container span,
 .container h1{
     color: black;
@@ -167,6 +170,7 @@ div .popupClose{
 }
 .contact{
     display: flex;
+    justify-content: center;
 }
 .contact img{
     width: 40px;
@@ -179,7 +183,8 @@ div .popupClose{
 
 /*MEDIAQUERIE*/
 
-@media all and (max-device-width: 480px){
+/*@media all and (max-device-width: 480px)*/
+@media screen and (min-width: 320px) and (max-width: 750px /*480*/){
     main{
         background-color: #edeff0;
     }
@@ -189,9 +194,11 @@ div .popupClose{
     .container h1, .container span{
         color: white;
     }
+    .illustration{
+        text-align: center;
+    }
     .illustration img{
         width: 60%;
-        margin-left: 5rem;
         margin-top: 2rem;
     }
     #submit{
@@ -214,6 +221,5 @@ div .popupClose{
     }
     .contact img{
         width: 40px;
-        margin-left: 17rem;
     }
 }

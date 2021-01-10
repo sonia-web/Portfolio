@@ -29,9 +29,12 @@ body{
 
 /* LE HEADER */
 
+header{
+    display: flex;
+}
 .navigation{
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      position: fixed;
      background-color: rgba(194, 198, 183, 0.5);
      width: 100%;
@@ -52,7 +55,7 @@ nav{
 .texte_navigation{
     display: flex;
     align-items: center;
-    margin-left: 30rem;
+    /* margin-left: 30rem; */
 }
 .texte_navigation ul{
     display: flex;
@@ -200,6 +203,7 @@ h3{
     justify-content: space-around;
     background-color: #edeff0;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 .illustration img{
     margin-top: 10rem;
@@ -318,8 +322,8 @@ footer ul{
 
 
 
-
-@media all and (max-device-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 700px /*480*/){
+/*@media all and (max-device-width: 480px)*/
 
     /*RESET*/
     *{
@@ -466,19 +470,23 @@ footer ul{
         padding-left: 3rem;
     }
     .parcours{
-        display: inline;
+        display: flex;
+        /* flex-direction: column; */
     }
     .illustration img{
-        width: 60%;
-        margin-left: 6rem;
+        width: 90%;
+        /* margin-left: 6rem; */
         margin-top: 2rem;
     }
     .texte{
-        width: 96%;
+        width: 98%;
         padding: 2rem;
     }
     .parcours{
         padding: 0;
+    }
+    .illustration{
+        text-align: center;
     }
 
 

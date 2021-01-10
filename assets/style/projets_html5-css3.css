@@ -1,3 +1,6 @@
+header{
+    display: flex;
+}
 .container span,
 .container h1{
     color: black;
@@ -86,13 +89,14 @@ shadow img{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.carousel-inner:hover{
+/* .carousel-inner:hover{
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-}
+} */
 /*MEDIAQUERIE*/
 
-@media all and (max-device-width: 480px){
+/*@media all and (max-device-width: 480px)*/
+@media screen and (min-width: 320px) and (max-width: 700px /*480*/){
     main{
         background-color: #edeff0;
     }
@@ -104,8 +108,8 @@ shadow img{
     }
     .illustration img{
         width: 80%;
-        margin-left: 4rem;
         margin-top: 2rem;
+   
     
     }
     .image_accueil{
@@ -120,6 +124,7 @@ shadow img{
         margin-bottom: 2rem;
         width: 100%;
     }
+   
     #carouselExampleControls2{
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -132,23 +137,36 @@ shadow img{
     }
     #carouselExampleControls_bis{
         margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
+        margin-bottom: 4rem;
+        /* width: 100%; */
+        padding: 2rem;
+        width: 41rem;
+        height: 19rem;
     }
+ 
     #carouselExampleControls2_bis{
         margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
+        margin-bottom: 4rem;
+        /* width: 100%; */
+        padding: 2rem;
+        width: 41rem;
+        height: 19rem;
     }
     #carouselExampleControls3_bis{
         margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
+        margin-bottom: 4rem;
+        /* width: 100%; */
+        padding: 2rem;
+        width: 41rem;
+        height: 19rem;
     }
     #carouselExampleControls4_bis{
         margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
+        margin-bottom: 4rem;
+        /* width: 100%; */
+        padding: 2rem;
+        width: 41rem;
+        height: 19rem;
     }
     .carousel-inner:hover{
         display: none;
@@ -158,5 +176,6 @@ shadow img{
     }
     .illustration{
         width: 100%;
+        text-align: center;
     }
 }
