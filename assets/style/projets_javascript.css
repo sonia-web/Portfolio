@@ -128,8 +128,8 @@ header{
         margin-top: 2rem;
         margin-bottom: 3rem;
         /* width: 100%; */
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         padding: 2rem;
         width: 41rem;
         height: 19rem;
@@ -138,8 +138,8 @@ header{
         margin-top: 2rem;
         margin-bottom: 3rem;
         /* width: 100%; */
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         padding: 2rem;
         width: 41rem;
         height: 19rem;

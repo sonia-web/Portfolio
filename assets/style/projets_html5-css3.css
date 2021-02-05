@@ -142,6 +142,8 @@ shadow img{
         padding: 2rem;
         width: 41rem;
         height: 19rem;
+        margin-left: auto;
+        margin-right: auto;
     }
  
     #carouselExampleControls2_bis{
@@ -151,6 +153,8 @@ shadow img{
         padding: 2rem;
         width: 41rem;
         height: 19rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     #carouselExampleControls3_bis{
         margin-top: 2rem;
@@ -159,6 +163,8 @@ shadow img{
         padding: 2rem;
         width: 41rem;
         height: 19rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     #carouselExampleControls4_bis{
         margin-top: 2rem;
@@ -167,6 +173,8 @@ shadow img{
         padding: 2rem;
         width: 41rem;
         height: 19rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .carousel-inner:hover{
         display: none;
