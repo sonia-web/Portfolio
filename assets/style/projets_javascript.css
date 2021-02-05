@@ -62,6 +62,11 @@ header{
     margin-right: 3rem;
     margin-left: 3rem;
 }
+#carouselExampleControls_t{
+    width: 50%;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
 .illustration{
     width: 35%;
     margin-top: 1rem;
@@ -135,6 +140,16 @@ header{
         height: 19rem;
     }
     #carouselExampleControls_jb{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        /* width: 100%; */
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2rem;
+        width: 41rem;
+        height: 19rem;
+    }
+    #carouselExampleControls_tb{
         margin-top: 2rem;
         margin-bottom: 3rem;
         /* width: 100%; */
